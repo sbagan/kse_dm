@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Семінар 1. Вступ до формальної логіки}
+\date{28 квітня 2023}
+
+\maketitle
+
+\subsection*{Задача 1}
+
+Перепешіть наступні твердження використувуючи символи $\lnot, \land, \lor$:
+
+\begin{itemize}
+    \item Нехай $s$ це твердження "акції ростуть"; $i$ це "відсоткова ставка стабільна"
+        \subitem Акції ростуть, але відсоткова ставка стабільна
+        \subitem Ні акції не ростуть, ні відсоткава ставка не стабільна
+    \item Нехай $h$ це твердження "Микола здоровий"; $w$ = "Микола багатий"; $s$ = "Микола розумний"
+        \subitem Микола здоровий і багатий, але не розумний
+        \subitem Микола не багатий, але здоровий і розумний
+        \subitem Микола не багатий, не розумний і не здоровий
+        \subitem Микола не здоровий чи багатий, але він розумний
+        \subitem Микола багатий, але не одначасно розумний і здоровий
+    \item Нехай $p$ це твердження "флаг DATAENDFLAG вимкнений"; $q$ це "ERROR дорівнює 0"; $r$ це "SUM менше 1,000"
+        \subitem флаг DATAENDFLAG вимкнений, ERROR дорівнює 0 і SUM менше 1,000.
+        \subitem флаг DATAENDFLAG вимкнений, але ERROR не дорівнює 0.
+        \subitem флаг DATAENDFLAG вимкнений, але ERROR не 0 чи SUM більше чи дорівнює 1,000.
+        \subitem флаг DATAENDFLAG ввімкнений, ERROR дореівню 0, але SUM більше чи дорівнює 1,000.
+\end{itemize}
+
+\subsection*{Задача 2}
+Складіть таблиці істинності для:
+\begin{itemize}
+    \item $\lnot p \land q$
+    \item $p \land (q \land r)$
+    \item $p \land (\lnot q \lor r)$
+    \item $(p \lor (\lnot p \lor q)) \land \lnot (q \land \lnot r)$
+\end{itemize}
+
+\subsection*{Задача 3}
+Напишіть заперечення наступних тверджень ($x, numOrders, numInStock$ -- конкретні числа)
+\begin{itemize}
+    \item $-2 < x < 7$
+    \item $0 > x > -7$
+    \item $1 > x >= -3$
+    \item $0 >= x > -7)$
+    \item (numOrders > 100 and numInStock < 500) or numInStock < 200
+    \item (numOrders < 50 and numInStock > 300) or (50 < numOrders < 75 and numInStock > 500)
+\end{itemize}
+
+\subsection*{Задача 4}
+Доведіть еквівалентність використовуючи перетворення
+\begin{itemize}
+    \item $(p \land \lnot q) \lor p \equiv p$
+    \item $p \land (\lnot q \lor p) \equiv p$
+    \item $\lnot(p \lor \lnot q) \lor (\lnot p \land \lnot q) \equiv \lnot p$
+    \item $ \lnot ((\lnot p \land q) \lor (\lnot p \land \lnot q)) \lor (p \land q) \equiv p$
+    \item $(p \land (\lnot (\lnot p \lor q))) \lor (p \land q) \equiv p$
+\end{itemize}
+
+\subsection*{Задача 5}
+Символом $\oplus$ (або XOR) позначають виключне або $p \oplus q \equiv (p \lor q) \land \lnot (p \land q)$.
+Складіть таблицю істинності для $p \oplus q$
+\begin{itemize}
+    \item Спростіть $p \oplus p$ $(p \oplus p) \oplus p$
+    \item Чи вірно що $p \oplus (q \oplus r) \equiv (p \oplus q) \oplus r$? Доведіть.
+    \item Чи вірно що $(p \oplus q) \land r \equiv (p \land r) \oplus (q \land r)$? Доведіть.
+\end{itemize}
+
+\subsection*{Задача 6}
+Складіть таблиці істинності (з імплікаціями):
+\begin{itemize}
+    \item $\lnot p \lor q \rightarrow \lnot q$
+    \item $p$
+    \item $p$
+    \item $p$
+    \item $p$
+    \item $p$
+\end{itemize}
+
+
+\subsection*{Задача 7}
+Напишіть заперечення наступних тверджень
+\begin{itemize}
+    \item Якщо P це квадрат, то P це прямокутник.
+    \item Якщо сьогодні Новий Рік, то завтра буде січень.
+    \item Якщо n просте, то n або непарне або рівне 2.
+\end{itemize}
+
+\subsection*{Задача 8}
+1.3.24 - 1.3.32 (перевести текстове доведення в формальне, знайти в ньому помилку або обгрунтувати, що воно вірне і за яким правилом)
+\end{document}
