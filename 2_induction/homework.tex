@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Домашка 1. Логіка і індукція}
+\date{4 травня 2023}
+
+\maketitle
+
+\subsection*{Задача 1}
+Складіть таблиці істинності для:
+\begin{itemize}
+    \item $p \land (\lnot q \lor r)$
+    \item $(p \lor (\lnot p \lor q)) \land \lnot (q \land r)$
+    \item $\lnot p \lor q \rightarrow \lnot q$
+    \item $p \land \lnot q \rightarrow r $
+    \item $(p \land q) \lor (\land p \lor (p \land \lnot q))$
+    \item $(\lnot p \lor q) \lor (p \land \lnot q)$
+\end{itemize}
+
+\subsection*{Задача 2}
+Доведіть еквівалентність використовуючи перетворення
+\begin{itemize}
+    \item $\lnot(p \lor \lnot q) \lor (\lnot p \land \lnot q) \equiv \lnot p$
+    \item $(p \land (\lnot (\lnot p \lor q))) \lor (p \land q) \equiv p$
+\end{itemize}
+
+\subsection*{Задача 3}
+Напишіть заперечення наступних тверджень
+\begin{itemize}
+    \item $-2 < x < 7$
+    \item $0 >= x > -7)$
+    \item (numOrders < 50 and numInStock > 300) or (50 < numOrders < 75 and numInStock > 500)
+    \item $p \rightarrow q \land r$
+    \item $x > 5 \rightarrow y < 7$
+\end{itemize}
+
+\subsection*{Задача 4}
+Перевірити коректність доведення
+\begin{itemize}
+    \item $(p \rightarrow q, q \rightarrow p) \Rightarrow p \lor q $
+    \item $(p, p \rightarrow q, \lnot q \lor r) \Rightarrow r$
+    \item $(p \lor q, p \rightarrow \lnot q, p \rightarrow r) \Rightarrow r$
+    \item $(p \rightarrow q \lor r, \lnot q \lor \lnot r) \Rightarrow \lnot p \lor \lnot r$
+\end{itemize}
+
+\subsection*{Задача 5}
+Доведіть методом математичної індукції
+\begin{itemize}
+    \item $1 + 6 + 11 + 16 + \mathellipsis + (5n-4) = \frac{n(5n-3)}{2}$
+    \item $1 + 2 + 4 + 8 + 16 + \mathellipsis + 2^n = 2^{n+1} - 1$
+    \item $n^2 < 2^n$ для всіх натуральних $n > 4$
+    \item $2^n < (n+2)!$ для всіх натуральних $n > 0$
+\end{itemize}
+
+\end{document}
