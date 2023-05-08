@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Семінар 3. Індукція і множини}
+\date{9 травня 2023}
+
+\maketitle
+
+\subsection*{Задача 1}
+Довести за допомогою математичної індукції
+\begin{itemize}
+    \item $n(n^2 + 5)$ ділиться на 6 без залишку для будь-якого натурального n
+    \item $\sqrt{n} < \frac{1}{\sqrt{1}} + \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} + \mathellipsis + \frac{1}{\sqrt{n}}$
+\end{itemize}
+
+\subsection*{Задача 2}
+Довести, що будь-яку сумму $\geq$ 8 можна скласти з 3 і 5 (методом Тараса)
+
+\subsection*{Принцип сильної математичної індукції}
+Нехай $P(n)$ це предикат визначений на всіх натуральних n. Якщо наступні два твердження вірні:
+\begin{itemize}
+    \item 1. $P(1)$ вірно (\textbf{база})
+    \item 2. Для всіх натуральних чисел $k > 1$ з істинності $P(1), P(2), \mathellipsis P(k)$ випливає істинність $P(k+1)$ (\textbf{перехід})
+\end{itemize}
+тоді для всіх натуральних $n$ $P(n)$ вірно.
+
+\subsection*{Задача 4}
+Доведіть методом сильної математичної індукції що будь-яке натуральне число має представлення у бінарній системі.
+
+$n = c_0*2^0 + c_1*2^1 + c_2*2^2 + \mathellipsis + c_k*2^k$,
+де $c_k=1; c_0,c_1,\mathellipsis,c_{k-1}$ або 0 або 1
+
+Порівняйте потужність двох множин
+\begin{itemize}
+    \item Кількість перших $2^k$ натуральних чисел
+    \item Кількість їх можливих представлень у бінарній системі
+\end{itemize}
+
+\subsection*{Формула включень-виключень}
+$A, B, C, A_1, A_2, \mathellipsis A_n$ - скінченні множини
+\begin{itemize}
+    \item $|A \cup B| = |A| + |B| - |A \cap B|$
+    \item $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |B \cap C| - |A \cap C| + |A \cap B \cap C|$
+    \item $|\bigcup_{i=1}^{n}A_i| = \sum_{1}^{n}|A_i| - \sum_{1 \leq i < j \leq n}|A_i \cap A_j| +
+    \sum_{1 \leq i < j < k \leq n}|A_i \cap A_j \cap A_k| + (-1)^{n-1}|\bigcap_{i=1}^n A_i|$
+\end{itemize}
+
+\end{document}
