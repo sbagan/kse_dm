@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Семінар 6. Конгруентність (порівняння за модулем)}
+\date{19 травня 2023}
+
+\maketitle
+
+\subsection*{Означення}
+Натуральні числа a і b називають конгруетними по модулю n ($a \equiv b (mod\ n); a \equiv_n b$), якщо
+\begin{itemize}
+    \item $n|(b-a)$
+    \item b і a дають однаковий (невідємний) залишок при діленні на n
+    \item $a = b + kn$
+\end{itemize}
+Доведіть еквівалентність цих означень. Доведіть, що конгруентність це відношення еквівалентності на цілих числах
+
+\subsection*{Властивості модуля}
+$a \equiv b (mod\ n); c \equiv d (mod\ n)$
+\begin{itemize}
+    \item $a+b \equiv c+d (mod\ n)$
+    \item $a-b \equiv c-d (mod\ n)$
+    \item $ab \equiv cd (mod\ n)$
+    \item $a^k \equiv c^k (mod\ n)$
+\end{itemize}
+Наслідок: $ab (mod\ n) \equiv (a mod\ n)(b mod\ n) (mod\ n); a^m \equiv (a mod\ n)^m (mod\ n)$
+
+\subsection*{Задача 1}
+Обчисліть
+\begin{itemize}
+    \item $7549 + 8131 + 954321 mod\ 10$
+    \item $7549*8131*954321 mod\ 10$
+    \item $7549 + 8131 + 954321 mod\ 17$
+    \item $7549*8131*954321 mod\ 17$
+\end{itemize}
+
+\subsection*{Приклад}
+$12^{43} mod\ 37$
+
+$43 = 32 + 8 + 2 +1$
+
+$12^{32 + 8 + 2 + 1} = 12^{32}*12^8*12^2*12$
+
+$12^2 = 144 mod\ 37 = 6$
+
+$12^4 = 6^2 mod\ 37 = 36 = -1$
+
+$12^8 = (-1)^2 mod\ 37 = 1$
+
+$12^{16}=12^{32}=1^2=1^4=1 mod\ 37$
+
+$12^{43} = 12*6*1*1 = 72 = 35 = -2 (mod\ 37)$
+
+\subsection*{Задача 2}
+Обчисліть
+\begin{itemize}
+    \item $14^2 mod 55, 14^4 mod 55, 14^8 mod 55, and 14^16 mod\ 55$
+    \item $14^{27} mod\ 55$
+    \item $675^{23} mod\ 31$
+\end{itemize}
+
+\end{document}
