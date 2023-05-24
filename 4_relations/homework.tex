@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Домашка 2. Множини і відношення}
+\date{24 травня 2023}
+
+\maketitle
+
+\subsection*{Задача 1}
+Нехай $A=\{1,3,5,7,9\} B=\{3,6,9\} C=\{2,4,6,8\}$. Знайдіть
+\begin{itemize}
+    \item $A \cup B$
+    \item $A \cap B$
+    \item $A \cup C$
+    \item $A \cap C$
+    \item $A - B$
+    \item $B - A$
+    \item $B \cup C$
+    \item $B \cap C$
+\end{itemize}
+
+\subsection*{Задача 2}
+Через $\mathcal{P}(A)$ позначимо булеан (множину всіх підмножин) множини A. Нехай $A=\{1, 2\} B=\{2,3\}$. Знайдіть
+\begin{itemize}
+    \item $\mathcal{P}(A)$
+    \item $\mathcal{P}(A \cup B)$
+    \item $\mathcal{P}(\emptyset)$
+    \item $\mathcal{P}(\mathcal{P}(\emptyset))$
+    \item $\mathcal{P}(\mathcal{P}(\mathcal{P}(\emptyset)))$
+\end{itemize}
+
+\subsection*{Задача 3}
+\begin{itemize}
+    \item $x,y \in \mathbb{R}; R = \{(x,y)|x=y^2\}$ Чи вірно, що $1R1$, $2R2$, $4R2$, $2R4$, $(-3,9)\in R$, $(9,-3)\in R$
+    \item $x,y \in \mathbb{R}; S = \{(x,y)|x \geq y\}$ Чи вірно, що $1S1$, $2S1$, $2S3$, $-2S-4$, $(2,1)\in S$, $(1,2)\in S$
+    \item $s,t$ - строки будь-якої довжини з a і b $R = \{(s,t)|t=as\}$
+Чи вірно, що $abRaab$, $aabRab$, $baRaba$, $abaR^{-1}ba$, $abbR^{-1}bba$, $abbaR^{-1}bba$
+    \item $s,t$ - строки будь-якої довжини з a і b; $sRt$, якщо перші два символи s і t однакові.
+Чи вірно, що $abaaRabba$, $aabbRbbaa$, $aaaaRaaab$, $aaaRab$, $aabbRaa$, $abbaR^{-1}baab$, $abbaR^{-1}abab$
+\end{itemize}
+
+\subsection*{Задача 4}
+Для наступних відношень вкажіть чи є воно: рефликсивним, іррефлексивним, нерефлексивним; симетричним, асиметричним, несеметричним;
+транзитивним, нетранзитивним; зв'язним, слабко зв'язним.
+\begin{itemize}
+    \item $x,y \in \mathbb{R}; R = \{(x,y)|x^2+y^2=1\}$
+    \item $x,y \in \mathbb{R}; R = \{(x,y)|xy \geq 0\}$
+    \item $x,y \in \mathbb{R}; R = \{(x,y)||x| = |y|\}$
+    \item $A = \mathbb{R} \times \mathbb{R}$, $R$ відношення на $A$: $(x_1,y_1)R(x_2,y_2)$, якщо $x_1 = x_2$
+    \item $s,t$ - строки будь-якої довжини з a і b, $l(s)$ - довжина строки s $R = \{(s,t)|l(s) = l(t)\}$
+    \item $s,t$ - строки будь-якої довжини з a і b, $l(s)$ - довжина строки s $R = \{(s,t)|l(s) < l(t)\}$
+\end{itemize}
+
+\subsection*{Задача 5}
+Наведіть приклад відношення (разом із множиною на якій воно задано), яке
+\begin{itemize}
+    \item рефлексивне, симитричне, але не транзитивне
+    \item рефлексивне, транзитивне, але не симетричне
+    \item симетричне, тразитивне, але не рефлексивне
+\end{itemize}
+
+\end{document}
