@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Семінар 8. Відношення порядку}
+\date{26 травня 2023}
+
+\maketitle
+
+\subsection*{Згадаємо лекцію :)}
+Випишіть означення відношення передпордку, часткового порядку, строгого порядку, лінійного порядку, строгого лінійного порядку
+
+\subsection*{Приклади}
+Чи є наступні відношення частковими порядками
+\begin{itemize}
+    \item Нехай P множина всіх людей в світі, а відношення $aRb$ коли a не старше за b.
+    \item S множина всіх строк з a і b. $R=\{(s,t)|l(s) \leq l(t)\}$. l - довжина строки
+    \item S множина всіх строк з a і b. $R=\{(s,t)|l(s) < l(t)\}$. l - довжина строки
+    \item $x,y \in \mathbb{R}; R = \{(x,y)|x^2 \leq y^2\}$
+    \item Камінь, ножиці, бумага.
+\end{itemize}
+
+\subsection*{Життєві приклади}
+\begin{itemize}
+    \item Обирати між кандидатами на роботу.
+    \item Обирати між оферами на роботу.
+    \item Обирати машину.
+\end{itemize}
+
+\subsection*{Діаграма Гассе}
+Намалюйте діаграму Гассе для відношень. Вкажіть мінімальні, максимальні, найменьші, найбільші елементи
+\begin{itemize}
+    \item чисел $\{1,2,4,5,10,15,20\}$ і відношення кратно
+    \item чисел $\{2,3,4,6,8,9,12,18\}$ і відношення кратно
+    \item $S={0,1}$ R задано на $S \times S$ $(a,b)R(c,d): a < c \lor (a=c \land b \leq d)$
+    \item $S={0,1}$ R задано на $S \times S$ $(a,b)R(c,d): a\leq c \land b \leq d$
+    \item $S={0,1}$ R задано на $S \times S \times S$ $(a,b,c)R(d,e,f): a\leq d \land b \leq e \land c \leq f$
+    \item чисел $\{1,2,2^2,2^3,2^4,\mathellipsis,2^n\}$ і відношення кратно
+\end{itemize}
+
+\end{document}
