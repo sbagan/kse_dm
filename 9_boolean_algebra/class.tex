@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+\begin{document}
+
+\title{Семінар 9. Булеві функції}
+\date{30 травня 2023}
+
+\maketitle
+
+\subsection*{Згадаємо лекцію}
+\begin{itemize}
+    \item Скільки існує одновимірних булевих функцій з 1 змінною? з 2? Які вони?
+    \item Що таке ДДНФ? ДКНФ? Скільки існує різних ДДНФ?
+\end{itemize}
+
+\subsection*{ДДНФ}
+Для наступних булевих функцій побудуйте таблицю істинності, за допомогою неї складіть ДДНФ
+\begin{itemize}
+    \item $x \oplus y$
+    \item $x \lor (\lnot y \land z)$
+    \item $(x~y) \land (x~z)$ (або $x=y=z$)
+    \item $\lnot maj(x,y,z)$
+    \item $\min(x,y,z)$
+    \item $\max(x,y,z)$
+\end{itemize}
+
+\subsection*{Будування ДКНФ з ДДНФ}
+Нехай $f(x,y,z) = x \oplus y \oplus z$
+\begin{itemize}
+    \item Складіть таблицю істинності для $f, \lnot f$
+    \item Складіть ДДНФ для $\lnot f$
+    \item Запишіть заперечення для ДДНФ
+    \item Складіть ДКНФ
+    \item Як можна було б побудувати ДКНФ з таблиці істинності?
+\end{itemize}
+
+\subsection*{ДКНФ}
+Для наступних булевих функцій складіть ДКНФ
+\begin{itemize}
+    \item $x NOR y$ (або $\lnot (x \lor y)$) (або стрілка Пірса)
+    \item $x \land (\lnot y \lor z)$
+    \item $\lnot((x~y) \land (x~z))$ (або $x \neq y \neq z$)
+    \item $maj(x,y,z)$
+    \item $\max(x,y,z)$
+    \item $\min(x,y,z)$
+\end{itemize}
+
+\end{document}
